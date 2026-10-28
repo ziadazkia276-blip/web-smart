@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartShop - Belanja Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h2>🛒 SmartShop</h2>
+    <input type="search" id="search" placeholder="Cari produk...">
+    <button onclick="showPage('login')">Login</button>
+    <button onclick="showPage('cart')">Keranjang (<span id="count">0</span>)</button>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <button onclick="showPage('home')">🏠 Beranda</button>
+      <button onclick="showPage('categories')">▦ Kategori</button>
+      <button onclick="showPage('promos')">🎁 Promo</button>
+      <button onclick="showPage('cart')">🛒 Keranjang</button>
+      <button onclick="showPage('orders')">📦 Pesanan Saya</button>
+      <button onclick="showPage('admin')">📊 Dashboard Admin</button>
+    </aside>
+
+    <main id="app"></main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
